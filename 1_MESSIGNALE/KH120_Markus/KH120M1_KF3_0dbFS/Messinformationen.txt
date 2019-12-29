@@ -1,0 +1,6 @@
+Name der Messung: KH120M1_KF3_0dbFS
+Signalart: .wav
+Startfreq:0
+Stopfreq:0Pegel: 0
+Messdauer: 3
+#######Platz fuer eigene Notizen:######

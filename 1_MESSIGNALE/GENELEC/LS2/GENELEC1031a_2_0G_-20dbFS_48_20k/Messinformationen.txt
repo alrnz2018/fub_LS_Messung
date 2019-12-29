@@ -1,0 +1,6 @@
+Name der Messung: GENELEC1031a_2_0G_-20dbFS_48_20k
+Signalart: sweep
+Startfreq:48
+Stopfreq:20000Pegel: -20
+Messdauer: 3
+#######Platz fuer eigene Notizen:######
