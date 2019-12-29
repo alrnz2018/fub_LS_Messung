@@ -122,6 +122,12 @@ for j = 1:1:180
 end
 end
 
+%% Normiere auf 0° @ 1kHz und berechne Pegel
+ref_wert = Abs_Octa(4,1);
+for m = 1:length(Abs_Octa(:,1))
+Log_Octa(m,:) = 20*log(Abs_Octa(m,:)./ref_wert);
+end
+
 
 %% Plotte
 
@@ -148,9 +154,9 @@ rad = (0:2:358) .* (pi / 180);
 
 %% Plot der Polardiagramme
 g = figure;
-polarplot(rad,Abs_Octa(1,:),rad,Abs_Octa(2,:),rad,Abs_Octa(3,:),...
-         rad,Abs_Octa(4,:),rad,Abs_Octa(5,:),rad,Abs_Octa(6,:),...
-         rad,Abs_Octa(7,:),rad,Abs_Octa(8,:));
+polarplot(rad,Log_Octa(1,:),rad,Log_Octa(2,:),rad,Log_Octa(3,:),...
+         rad,Log_Octa(4,:),rad,Log_Octa(5,:),rad,Log_Octa(6,:),...
+         rad,Log_Octa(7,:),rad,Log_Octa(8,:));
 % Troubleshooting Backup
 % mmpolar(rad,Abs_Octa(1,:),rad,Abs_Octa(2,:),rad,Abs_Octa(3,:),...
 %          rad,Abs_Octa(4,:),rad,Abs_Octa(5,:),rad,Abs_Octa(6,:),...
