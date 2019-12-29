@@ -102,7 +102,7 @@ UnPink_mat=Abs_mat.*abs_SINV';
 %cd Messdaten
 %dir *.wav
 
-3%%
+%%
 % Oktavbandvektor bestimmen
 freq = [125, 250, 500, 1000, 2000, 4000, 7910, 16000];
 fft_resolution=FS/length(UnPink_mat);
