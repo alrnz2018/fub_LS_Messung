@@ -123,9 +123,9 @@ end
 end
 
 %% Normiere auf 0° @ 1kHz und berechne Pegel
-ref_wert = Abs_Octa(4,1); % 1kHz @ 0°
-for m = 1:length(Abs_Octa(:,1))
-Log_Octa(m,:) = 20*log(Abs_Octa(m,:)./ref_wert);
+ref_wert = Abs_Octa(1,4); % 1kHz @ 0°
+for m = 1:length(Abs_Octa(1,:))
+Log_Octa(:,m) = 20*log(Abs_Octa(:,m)./ref_wert);
 end
 
 
